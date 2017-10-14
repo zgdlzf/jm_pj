@@ -1,0 +1,148 @@
+body,html{
+    margin:0;
+    padding:0;
+}
+.margin-top::before{
+    content:"";
+    display: block;
+    overflow:hidden;
+}
+.clear-float::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.cent{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:auto;
+}
+.part{
+    width:90%;
+    height:30px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+@media screen and (max-width:900px) and (min-width:200px){
+    .main{
+        width:100%;
+        height:100%;
+        margin:0 auto;
+        font:15px "微软雅黑";
+        color: rgb(25,25,25);
+        background:rgb(56, 183, 132);
+        /* padding:0 5%; */
+    }
+}
+.main{
+    width:900px;
+    margin:0 auto;
+    font:16px "微软雅黑";
+    color: rgb(25,25,25);
+    background:rgb(56, 183, 132);
+    /* padding:0 5%; */
+}
+.main-name{
+    width:100%;
+    height:50px;
+    font-size:30px;
+    text-align:center;
+    display:inline-block;
+    margin-top:18px;
+}
+.main-semester{
+    width:100%;
+    height:30px; 
+    font-size:18px;
+    display:inline-block;
+    text-align:center;
+}
+.main-container{
+    width:90%;
+    padding:1% 5%;
+    background-color:rgb(242,242,242);
+}
+.course.title{
+    float: left;
+}
+.course.teacher{
+    float:right;
+}
+.memo{
+    margin:3px 0 0 3px;
+    font-size:15px;
+    color:rgb(130, 142, 136);
+}
+.assess{
+    width:100%;
+    height:40px;
+    margin:2px auto;
+    font-size:20px;
+    /* border:1px solid rgb(150,152,150); */
+    position:relative;
+}
+.assess.item1{
+    width:20%;
+    float:left;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    border:0;
+}
+.assess.item2{
+    width:55%;
+    float:left;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    border:0;
+}
+.assess.item3{
+    width:25%;
+    float:left;
+    border:0;
+    position:relative;
+}
+.star{
+    font-style:normal;
+    font-size:28px;
+}
+.on{
+    color:rgb(218, 29, 63);
+}
+.starIn{
+    width:20px;
+    height:28px;
+    border:0px;
+    background-color:rgb(242,242,242);
+    position: absolute;
+    top:0;
+    margin-left:5px;
+}
+
+.gratulate{
+    width:100%;
+    height:40px;
+}
+.submit{
+    float:right;
+    margin-right:15%;
+    margin-top:0px;
+    width:100px;
+    height:30px;
+    position:relative;
+}
+.submit>input{
+    border:0;
+    width:100px;
+    height: 30px;
+    position: absolute;
+    top:3px;
+}
+.feedback{
+    width:50%;
+    margin:50px auto;
+    font-size:30px;
+}
